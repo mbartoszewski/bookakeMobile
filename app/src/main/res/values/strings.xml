@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Bookake</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_user">User</string>
+    <string name="menu_app">Application</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_login">Login</string>
+    <string name="menu_logout">Logout</string>
+    <string name="button_register">Register</string>
+    <string name="text_register">Still without account? Register now and see how service request are easy. Click on Register buton.</string>
+    <string name="login_name_hint">Nick</string>
+    <string name="login_password_hint">Password</string>
+    <string name="menu_service">Services</string>
+    <string name="menu_service_add">Add</string>
+    <string name="menu_service_history">History</string>
+    <string name="menu_service_pending">Pending</string>
+    <string name="menu_service_search">Search</string>
+    <string name="menu_provider">Provider</string>
+    <string name="menu_provider_pending">Pending</string>
+    <string name="menu_provider_history">History</string>
+    <string name="menu_manage_service">Manage</string>
+    <string name="button_arrange">Make appointment</string>
+    <string name="button_see_details">See details</string>
+    <string name="contact_email" translatable="false">Email</string>
+    <string name="contact_mobile">Mobile</string>
+    <string name="address_street">Street and number</string>
+    <string name="address_city">City</string>
+    <string name="address_zip">Zip</string>
+    <string name="address_state">State</string>
+    <string name="service_name">Name</string>
+    <string name="button_ok" translatable="false">Ok</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="additional_info_hint">(optional) Model, malfunction description.</string>
+    <string name="reservation_unavailable_snackabar">Time traveler here? :)</string>
+    <string name="login_empty">This value cannot be empty.</string>
+    <string name="detail_edit_title">Title</string>
+    <string name="detail_edit_time">Execution time in minutes</string>
+    <string name="detail_edit_price">Price</string>
+    <string name="detail_edit_description">Description</string>
+    <string name="order_added">Order added</string>
+    <string name="detail_deleted">Deleted</string>
+    <string name="service_description">About us (max 255 char)</string>
+    <string name="service_added">Service added.</string>
+    <string name="pending_additional_info_hint">Additional information:</string>
+    <string name="pending_status_hint">Status:</string>
+    <string name="pending_accept_button">Confirm</string>
+    <string name="search_tip">Search by city</string>
+</resources>

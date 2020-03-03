@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/day_full_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brak wolnych miejsc."
+        android:textColor="@color/pastel_red"
+        android:textSize="@dimen/card_item_title"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/reservation_constraint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/service_detail_calendarView" />
+
+    <CalendarView
+        android:id="@+id/service_detail_calendarView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reservation_time_recyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:minHeight="35dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/service_detail_calendarView" >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/reservation_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reservation_time_recyclerView">
+
+        <TextView
+            android:id="@+id/detail_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            android:textSize="@dimen/card_item_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pending_detail_price_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="?android:attr/textColorHint"
+            android:textSize="@dimen/card_item_details"
+            app:layout_constraintBottom_toBottomOf="@+id/money_imageView"
+            app:layout_constraintStart_toEndOf="@+id/money_imageView"
+            app:layout_constraintTop_toTopOf="@+id/money_imageView" />
+
+        <TextView
+            android:id="@+id/pending_detail_execution_time_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="?android:attr/textColorHint"
+            android:textSize="@dimen/card_item_details"
+            app:layout_constraintBottom_toBottomOf="@+id/time_imageView"
+            app:layout_constraintStart_toEndOf="@+id/time_imageView"
+            app:layout_constraintTop_toTopOf="@+id/time_imageView" />
+
+        <ImageView
+            android:id="@+id/time_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorTransparent"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            app:layout_constraintStart_toStartOf="@+id/detail_title"
+            app:layout_constraintTop_toBottomOf="@+id/detail_title"
+            app:srcCompat="@drawable/round_access_time_24" />
+
+        <ImageView
+            android:id="@+id/money_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@color/colorTransparent"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            app:layout_constraintBottom_toBottomOf="@+id/time_imageView"
+            app:layout_constraintStart_toEndOf="@+id/pending_detail_execution_time_textView"
+            app:layout_constraintTop_toTopOf="@+id/time_imageView"
+            app:srcCompat="@drawable/round_attach_money_24" />
+
+        <Button
+            android:id="@+id/service_appointment_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_arrange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/additional_info_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time_imageView">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/additional_info_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/additional_info_hint" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

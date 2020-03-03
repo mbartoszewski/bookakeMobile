@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bookake</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="menu_settings">Ustawienia</string>
+    <string name="menu_app">Aplikacja</string>
+    <string name="menu_login">Zaloguj</string>
+    <string name="menu_logout">Wyloguj</string>
+    <string name="menu_user">Użytkownik</string>
+    <string name="login_name_hint">Nick</string>
+    <string name="login_password_hint">Hasło</string>
+    <string name="menu_service">Usługi</string>
+    <string name="menu_service_add">Dodaj</string>
+    <string name="menu_service_history">Historia</string>
+    <string name="menu_service_pending">Nadchodzące</string>
+    <string name="menu_service_search">Szukaj</string>
+    <string name="menu_provider">Wykonawca</string>
+    <string name="menu_provider_history">Historia</string>
+    <string name="menu_provider_pending">Nadchodzące</string>
+    <string name="menu_manage_service">Zarządzaj</string>
+    <string name="button_register">Rejestracja</string>
+    <string name="text_register">Wciąż bez konta? Zarejestruj się i zobacz jakie umawianie się jest łatwe. Kliknij na Rejestracja.</string>
+    <string name="button_arrange">Umów</string>
+    <string name="button_see_details">Szczegóły</string>
+    <string name="contact_mobile">Telefon</string>
+    <string name="address_city">Miejscowość</string>
+    <string name="address_state">Województwo</string>
+    <string name="address_street">Ulica i numer</string>
+    <string name="address_zip">Kod pocztowy</string>
+    <string name="service_name">Nazwa zakładu</string>
+    <string name="button_cancel">Anuluj</string>
+    <string name="additional_info_hint">(opcjonalnie) Model, opis usterki</string>
+    <string name="reservation_unavailable_snackabar">Cofniesz się w czasie?</string>
+    <string name="login_empty">To pole nie może być puste.</string>
+    <string name="detail_edit_description">Opis usługi</string>
+    <string name="detail_edit_price">Cena</string>
+    <string name="detail_edit_time">Czas wykonania</string>
+    <string name="detail_edit_title">Nazwa usługi</string>
+    <string name="order_added">Zarezerwowano usługę.</string>
+    <string name="detail_deleted">Usunięto</string>
+    <string name="service_description">O nas (maksymalnie 255 znaków)</string>
+    <string name="service_added">Dodano usługę.</string>
+    <string name="pending_additional_info_hint">Dodatkowe informacje:</string>
+    <string name="pending_status_hint">Status:</string>
+    <string name="pending_accept_button">Potwierdź</string>
+    <string name="search_tip">Podaj miasto</string>
+</resources>

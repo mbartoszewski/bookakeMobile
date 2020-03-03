@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="@string/menu_provider"
+        android:id="@+id/nav_provider"
+        android:visible="false">
+        <menu>
+            <item android:id="@+id/nav_manage_service"
+                android:icon="@drawable/baseline_add_24"
+                android:title="@string/menu_manage_service"
+                />
+            <item android:id="@+id/nav_provider_pending"
+                android:icon="@drawable/round_calendar_today_24"
+                android:title="@string/menu_provider_pending"
+                />
+        </menu>
+    </item>
+
+    <item android:title="@string/menu_service"
+        android:id="@+id/nav_service">
+        <menu>
+            <item android:id="@+id/nav_service_add"
+                android:icon="@drawable/round_add_circle_outline_24"
+                android:title="@string/menu_service_add"
+                android:visible="false"/>
+
+            <item android:id="@+id/nav_service_search"
+                android:icon="@drawable/round_search_24"
+                android:title="@string/menu_service_search"/>
+
+            <item android:id="@+id/nav_service_pending"
+                android:icon="@drawable/round_calendar_today_24"
+                android:title="@string/menu_service_pending"
+                android:visible="false"/>
+        </menu>
+    </item>
+
+    <item android:title="@string/menu_user"
+        android:id="@+id/nav_account">
+        <menu>
+            <item android:id="@+id/nav_login"
+                android:icon="@drawable/round_power_on_settings_new_24"
+                android:title="@string/menu_login"
+                android:visible="true"/>
+
+            <item android:id="@+id/nav_logout"
+                android:icon="@drawable/round_power_off_settings_new_24"
+                android:title="@string/menu_logout"
+                android:visible="false"/>
+
+        </menu>
+    </item>
+</menu>
