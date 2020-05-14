@@ -9,9 +9,8 @@ Niektóre funkcje aplikacji:\
   -Dodawanie warsztatu przez użytkownika systemu\
   -Dodawanie oraz usuwanie usług\
   -Podgląd harmonogramu zarezerwowanych usług\
-
-<img src="https://github.com/mbartoszewski/bookakeMobile/blob/master/screenshots/Screenshot_1578170292.png" width="240">
-<img src="https://github.com/mbartoszewski/bookakeMobile/blob/master/screenshots/Screenshot_1578593020.png" width="240">
+Poniżej link do serwisu streamable z filmem prezentującym działanie aplikacji:\
+<a href = "https://streamable.com/jy1dom"> Demo działania aplikacji</a>\
 <img src="https://github.com/mbartoszewski/bookakeMobile/blob/master/screenshots/Screenshot_1578594942.png" width="240">
 <img src="https://github.com/mbartoszewski/bookakeMobile/blob/master/screenshots/Screenshot_1578595060.png" width="480">
 <img src="https://github.com/mbartoszewski/bookakeMobile/blob/master/screenshots/Screenshot_1578593239.png" width="480">
